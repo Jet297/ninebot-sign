@@ -2,8 +2,8 @@ name: 九号出行签到
 
 on:
   schedule:
-cron: '0 4 * * *' # UTC 04:00 / 北京时间 12:00
-workflow_dispatch:      # 允许手动触发
+    - cron: '0 4 * * *'  # UTC 04:00 / 北京时间 12:00
+  workflow_dispatch:      # 允许手动触发
 
 jobs:
   sign:
